@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_securitySettings"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_fourf"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/darker_gray" />
+
+        <Switch
+            android:id="@+id/sw_4F"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/tv_4FContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_4FTitle"
+            android:layout_alignStart="@+id/tv_4FTitle"
+            android:layout_centerVertical="true"
+            android:text="@string/access_with_a_picture_of_your_fingers"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_4FTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_4FContent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/iv_4F"
+            android:layout_toRightOf="@+id/iv_4F"
+            android:gravity="center_vertical"
+            android:text="@string/_4f_authentication"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_4F"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/hand_icon" />
+
+        <TextView
+            android:id="@+id/tv_4FMandatory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/sw_4F"
+            android:layout_alignLeft="@+id/sw_4F"
+            android:layout_alignRight="@+id/sw_4F"
+            android:layout_alignStart="@+id/sw_4F"
+            android:layout_below="@+id/sw_4F"
+            android:text="@string/mandatory"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fourfLiveness"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/darker_gray" />
+
+        <Switch
+            android:id="@+id/sw_4FLiveness"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/tv_4FLivenessContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_4FLivenessTitle"
+            android:layout_alignStart="@+id/tv_4FLivenessTitle"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/sw_4FLiveness"
+            android:layout_toStartOf="@+id/sw_4FLiveness"
+            android:text="@string/access_with_a_picture_of_your_fingertips_nwith_liveness_detection"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_4FLivenessTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_4FLivenessContent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/iv_4FLiveness"
+            android:layout_toRightOf="@+id/iv_4FLiveness"
+            android:gravity="center_vertical"
+            android:text="@string/_4f_liveness"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_4FLiveness"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/hand_icon_liveness" />
+
+        <TextView
+            android:id="@+id/tv_4FLivenessMandatory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sw_4FLiveness"
+            android:layout_toEndOf="@+id/tv_4FLivenessContent"
+            android:layout_toRightOf="@+id/tv_4FLivenessContent"
+            android:text="@string/mandatory"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fingerprint"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/iv_fingerPrint"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/fingerprint_icon" />
+
+        <TextView
+            android:id="@+id/tv_fingerprintContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_fingerprintTitle"
+            android:layout_alignStart="@+id/tv_fingerprintTitle"
+            android:layout_centerVertical="true"
+            android:text="@string/access_by_using_hardware_fingerprint_nscanner"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_fingerprintTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_fingerprintContent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/iv_fingerPrint"
+            android:layout_toRightOf="@+id/iv_fingerPrint"
+            android:gravity="center_vertical"
+            android:text="@string/fingerprint_authentication"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/sw_fingerprint"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/tv_fingerprintMandatory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sw_fingerprint"
+            android:layout_alignStart="@+id/sw_fingerprint"
+            android:layout_below="@+id/sw_fingerprint"
+            android:text="@string/mandatory"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

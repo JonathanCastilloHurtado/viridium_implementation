@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="veridiumid_both_hands_message">Dies gibt Ihnen die Möglichkeit, bei der Authentifizierung den Besitzer zu wechseln</string>
+    <string name="veridiumid_fourf_cancel">Abbrechen</string>
+    <string name="veridiumid_label_both_hands">Beide Hände</string>
+    <string name="veridiumid_label_left_hand_only">Nur linke Hand</string>
+    <string name="veridiumid_label_right_hand_only">Nur rechte Hand</string>
+    <string name="veridiumid_title_select_fourf_hand">Beginnen Sie die Registrierung, indem Sie eine Hand auswählen</string>
+</resources>

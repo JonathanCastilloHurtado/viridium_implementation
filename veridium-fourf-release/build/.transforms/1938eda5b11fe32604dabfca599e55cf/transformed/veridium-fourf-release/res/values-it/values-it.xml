@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="veridiumid_both_hands_message">Questo ti dà la possibilità di cambiare di mano quando ti autentichi</string>
+    <string name="veridiumid_fourf_cancel">Annulla</string>
+    <string name="veridiumid_label_both_hands">Entrambe le mani</string>
+    <string name="veridiumid_label_left_hand_only">Solo mano sinistra</string>
+    <string name="veridiumid_label_right_hand_only">Solo mano destra</string>
+    <string name="veridiumid_title_select_fourf_hand">Inizia l\'iscrizione selezionando una mano</string>
+</resources>

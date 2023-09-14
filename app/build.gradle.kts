@@ -36,6 +36,23 @@ android {
 }
 
 dependencies {
+      implementation(project(mapOf("path" to ":veridium-settings-ui-release")))
+    implementation(project(mapOf("path" to ":veridium-fourf-ui-release")))
+    implementation(project(mapOf("path" to ":veridium-core-release")))
+    implementation(project(mapOf("path" to ":veridium-fourf-release")))
+    implementation(project(mapOf("path" to ":veridium-support-release")))
+    implementation(project(mapOf("path" to ":veridium-analytics-release")))
+    implementation(project(mapOf("path" to ":veridiumid-sdk-release")))
+    implementation(project(mapOf("path" to ":veridium-secure-data-release")))
+    project(":veridium-core-release")
+      project(":veridium-analytics-release")
+      project(":veridium-fourf-release")
+      project(":veridium-fourf-ui-release")
+      project(":veridiumid-sdk-release")
+      project(":veridium-secure-data-release")
+      project(":veridium-settings-ui-release")
+      project(":veridium-support-release")
+
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

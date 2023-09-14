@@ -1,0 +1,343 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <com.veridiumid.sdk.support.ui.AspectRatioSafeFrameLayout
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/img_finger_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/camera_preview"
+            android:layout_alignBottom="@+id/camera_preview"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_instruction"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="bottom|center_horizontal"
+        android:rotation="90"
+        android:text="@string/veridiumid_fourf_searching"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_instruction_portrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_topBar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/veridiumid_fourf_searching"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/iv_indicator"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:rotation="0"
+        android:src="@drawable/veridiumid_fourf_indicator_thumb"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/tv_indicator_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/iv_indicator">
+
+        <TextView
+            android:id="@+id/tv_indicator"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:gravity="bottom|center_horizontal"
+            android:rotation="90"
+            tools:text="digit name"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_indicator_protrait"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_below="@+id/tv_instruction_portrait"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/veridiumid_fourf_indicator_thumb"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_indicator_protrait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_indicator_protrait"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        tools:text="digit name"
+        tools:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_meterLeft"
+        android:layout_width="50dp"
+        android:layout_height="302dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        tools:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_meterLeft"
+            android:layout_width="50dp"
+            android:layout_height="302dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/veridiumid_fourf_meter" />
+
+        <ImageView
+            android:id="@+id/iv_arrowLeft"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/veridiumid_fourf_triangle_white"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tooFarLeft"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:layout_weight="1"
+                android:gravity="top|center"
+                android:rotation="90"
+                android:text="@string/veridiumid_fourf_too_far"
+                android:textColor="@android:color/white"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_tooCloseLeft"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="36dp"
+                android:layout_weight="1"
+                android:gravity="bottom|center"
+                android:rotation="90"
+                android:text="@string/veridiumid_fourf_too_close"
+                android:textColor="@android:color/white"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_meterRight"
+        android:layout_width="50dp"
+        android:layout_height="302dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_meterRight"
+            android:layout_width="50dp"
+            android:layout_height="302dp"
+            android:scaleType="fitXY"
+            android:scaleX="-1"
+            android:src="@drawable/veridiumid_fourf_meter" />
+
+        <ImageView
+            android:id="@+id/iv_arrowRight"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:adjustViewBounds="true"
+            android:scaleX="-1"
+            android:src="@drawable/veridiumid_fourf_triangle_white"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/text_right_too_far_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_tooFarRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center|top"
+                    android:rotation="0"
+                    android:text="@string/veridiumid_fourf_too_far"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/text_left_too_close_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_tooCloseRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="bottom|center"
+                    android:rotation="0"
+                    android:text="@string/veridiumid_fourf_too_close"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/veridiumid_fourf_hand_scan_banner" />
+
+        <ImageView
+            android:id="@+id/iv_tips"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/veridiumid_fourf_authenticator_help"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/veridiumid_fourf_ic_close" />
+
+        <TextView
+            android:id="@+id/tv_top_bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/veridiumid_fourf_name"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/focus_icon_frame"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_focus_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/veridiumid_fourf_focus_circle"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <com.veridiumid.sdk.fourf.ui.LayoutSwitchHand
+        android:id="@+id/l_switch_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="bottom"
+        android:rotation="90">
+    </com.veridiumid.sdk.fourf.ui.LayoutSwitchHand>
+
+    <RelativeLayout
+        android:id="@+id/screen_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:visibility="invisible"
+        tools:visibility="gone">
+    </RelativeLayout>
+
+</RelativeLayout>

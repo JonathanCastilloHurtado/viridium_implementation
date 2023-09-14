@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="veridiumid_both_hands_message">This gives you the option to change hands when you authenticate</string>
+    <string name="veridiumid_fourf_cancel">Cancel</string>
+    <string name="veridiumid_label_both_hands">Both hands</string>
+    <string name="veridiumid_label_left_hand_only">Left hand only</string>
+    <string name="veridiumid_label_right_hand_only">Right hand only</string>
+    <string name="veridiumid_title_select_fourf_hand">Select hand</string>
+</resources>

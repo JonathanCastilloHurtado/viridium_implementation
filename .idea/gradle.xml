@@ -12,6 +12,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/veridium-analytics-release" />
+            <option value="$PROJECT_DIR$/veridium-core-release" />
+            <option value="$PROJECT_DIR$/veridium-fourf-release" />
+            <option value="$PROJECT_DIR$/veridium-fourf-ui-release" />
+            <option value="$PROJECT_DIR$/veridium-secure-data-release" />
+            <option value="$PROJECT_DIR$/veridium-settings-ui-release" />
+            <option value="$PROJECT_DIR$/veridium-support-release" />
+            <option value="$PROJECT_DIR$/veridiumid-sdk-release" />
           </set>
         </option>
       </GradleProjectSettings>

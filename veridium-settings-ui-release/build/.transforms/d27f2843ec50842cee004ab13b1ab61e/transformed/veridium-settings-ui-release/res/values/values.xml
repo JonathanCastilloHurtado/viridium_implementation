@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="_4f_authentication">4F Authentication</string>
+    <string name="_4f_liveness">4F Liveness</string>
+    <string name="access_by_using_hardware_fingerprint_nscanner">Access by using hardware fingerprint scanner</string>
+    <string name="access_using_a_picture_of_your_face">Access using a picture of your face</string>
+    <string name="access_with_a_picture_of_your_fingers">Access with a picture of your fingers</string>
+    <string name="access_with_a_picture_of_your_fingertips_nwith_liveness_detection">Access with a picture of your fingertips with liveness detection</string>
+    <string name="access_with_a_random_gesture">Access with a random gesture</string>
+    <string name="authenticate_with_a_series_of_predefined_facial_gestures">Authenticate with a series of predefined facial gestures</string>
+    <string name="do_you_want_to_register_your_fingerprint">Do you want to register your fingerprint?</string>
+    <string name="face_authentication">Face authentication</string>
+    <string name="face_liveness_signature">Face Liveness Signature</string>
+    <string name="fingerprint_authentication">Fingerprint authentication</string>
+    <string name="fingerprint_not_registered">Fingerprint not registered</string>
+    <string name="mandatory">mandatory</string>
+    <string name="no">NO</string>
+    <string name="no_biometrics_warning">You need to have at least one biometric enabled!</string>
+    <string name="ok">OK</string>
+    <string name="random_liveness">Random liveness</string>
+    <string name="unregister_account">Unregister Account</string>
+    <string name="yes">YES</string>
+</resources>
